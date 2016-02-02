@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-#view  
+#View  
 
 class AnimalActions:
 	def quack(self): return self._doAction('quack')
@@ -16,7 +16,7 @@ class AnimalActions:
 
 	def animalName(self):
 		return self.__class__.__name__.lower()
-
+#Model
 class Duck(AnimalActions):
 	strings = dict(
 		quack = "Quaaaaaaak!",
@@ -36,7 +36,7 @@ class Dog(AnimalActions):
 		bark = "Arf!",
 		fur = "The dog has white fur with black spots."
 	)
-
+#Controller
 def in_the_doghouse(dog):
 	print(dog.bark())
 	print(dog.fur())
