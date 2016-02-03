@@ -12,7 +12,7 @@ def main():
 	x.insert(2, 7)
 	print(type(x), x)
 
-	s = 'string'
+	s = 'string'#an immutable sequence
 	print(type(s), s[2:4])
 	for c in s:
 		print(c)
