@@ -18,5 +18,19 @@ def main():
 	print(x) 
 	print(id(x))
 
+	#logical values of true and false
+	a, b = 0, 1
+
+	print(a<b)
+	print(type(a))
+	a = True
+	b = True
+	print(type(a))
+	print(type(b))
+	print(id(a))
+	print(id(b))
+
+
+
 
 if __name__ == "__main__": main()
