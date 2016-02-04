@@ -8,6 +8,7 @@ def main():
 	pattern = re.compile('1line')
 	for line in fh:
 		if re.search(pattern, line):
-			print(line)
+			# print(line)
+			print(pattern.sub('####', line))
 
 if __name__ == "__main__": main()

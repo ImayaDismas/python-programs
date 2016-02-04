@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+
+#Exceptions is the key method of handling errors in Python
+
+def main():
+ 	try:
+		for line in readfile('lines.txt'):
+			print(line.strip())
+
+	except IOError as e:
+		print('could not open the file:', e)
+
+	except ValueError as e:
+		print('bad filename', e)
+
+def readfile(filename):
+	if filename.endswith('.txt'):
+		fh = open(filename)
+		return fh.readlines()
+	else:
+		raise ValueError('Filename must end with .txt')
+
+if __name__ == "__main__": main()
