@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # Pattern: (d\w+)\W(d\w+)
-
 import re
 def searching():
   file = open("filebased.txt", "r")
@@ -11,8 +10,40 @@ def searching():
     # m = re.match(words + "\w+\W\w+", line)
     if m:
       print(m.group())
-    
+  # print("<html>")
+  # print("<body bgcolor=\"white\">")
+  # print("<table border=\"2\" cellspacing=\"0\" cellpadding=\"7\">")
+  # def th(strn):
+  #   print("<tr><td></td></tr>")
+  #   print("<tr>")
+  #   fields=strn.split("|")
+  #   for field in fields:
+  #     print("<th>"+field+"</th>")
+  #   print("</tr>")
 
+  # def td(strn):
+  #   print("<tr>")
+  #   fields=strn.split("|")
+  #   for field in fields:
+  #     for line in file:
+  #       # match = re.search(words, line)
+  #       m = re.match(words + "\w+", line)
+  #       # m = re.match(words + "\w+\W\w+", line)
+  #       if m:
+  #         print("<td>"+m.group+"</td>")
+  #   print("</tr>")
+  # for line in file:
+  #   f=line.split(":")
+  #   L=len(f)
+  #   if L==2:
+  #     th(f[0])
+  #     td(f[1])
+  #   else:
+  #     td(f[0])
+
+  # print("</table>")
+  # print("</body>")
+  # print("</html>")
   file.close()
 
 def storage():
