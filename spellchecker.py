@@ -1,17 +1,16 @@
 def spellchecker(sentence):
   words = open('checker.words').readlines()
   words = list(map(lambda x: x.strip(),words))
-  res = sentence.split()
-  ret = []
-  for item in res:
+  items = sentence.split()
+  misspelt = []
+  for item in items:
     if(item not in words):
-      ret.append(item)
-  return ret
+      misspelt.append(item)
+  return misspelt
 
 def  main():
-  sentence = input("Please enter a sentence\n")
   lst = []
-
+  sentence = input("Enter the sentence:\n")
   lst = spellchecker(sentence)
   print(lst)
 
