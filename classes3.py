@@ -34,11 +34,21 @@ class Dog:
 def main():
 	donald = Duck()
 	fido = Dog()
-	for o in (donald, fido):
-		o.quack()
-		o.walk()
-		o.bark()
-		o.fur()
+	in_the_forest(donald)
+	in_the_pond(fido)
+
+def in_the_forest(dog):
+	dog.bark()
+	dog.fur()
+
+def in_the_pond(duck):
+	duck.quack()
+	duck.walk()
+	# for o in (donald, fido):
+	# 	o.quack()
+	# 	o.walk()
+	# 	o.bark()
+	# 	o.fur()
 	
 
 if __name__ == "__main__": main()
